@@ -1,9 +1,8 @@
 import { describe, it, expect } from 'vitest'
 import { render, screen } from '@testing-library/react'
+import Page from '@web/app/login/page'
 
-import Page from '@web/app/page'
-
-describe('/', () => {
+describe('/login', () => {
     it('render form with username', async () => {
         render(<Page />)
 
