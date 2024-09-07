@@ -32,22 +32,25 @@ This Turborepo has some additional tools already setup for you:
 -   [ESLint](https://eslint.org/) for code linting
 -   [Prettier](https://prettier.io) for code formatting
 
-### Build
-
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm build
-```
-
 ### Develop
 
 To develop all apps and packages, run the following command:
 
+```sh
+cd elysia-mono
+bun i
+bun run dev
 ```
-cd my-turborepo
-pnpm dev
+
+### Test
+
+To run tests for all apps and packages, run the following command:
+
+```sh
+bun i
+bunx playwright install --with-deps
+bun run build
+bun run test
 ```
 
 ### Remote Caching
