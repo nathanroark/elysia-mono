@@ -6,7 +6,13 @@
   "scripts": {
     "test": "bun test",
     "dev": "bun run --watch src/index.ts",
-    "build": "bun build --compile --minify-whitespace --minify-syntax ./src/index.ts --outfile server"
+    "build": "bun build --compile --minify-whitespace --minify-syntax ./src/index.ts --outfile server",
+    "db:generate": "prisma migrate dev",
+    "db:migrate": "prisma migrate deploy",
+    "db:push": "prisma db push",
+    "db:pull": "prisma db pull",
+    "db:studio": "prisma studio",
+    "db:seed": "bun run prisma/seed.ts"
   },
   "dependencies": {
     "@elysiajs/static": "^1.1.1",

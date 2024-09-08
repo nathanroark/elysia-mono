@@ -2,11 +2,11 @@ import { spawn } from 'child_process'
 
 // Define benchmark commands including a POST test for Seattle area lat/long
 const commands = [
-  `bombardier --fasthttp -c 500 -d 10s http://127.0.0.1:3001/tracks/locations`,
-  `bombardier --fasthttp -c 500 -d 10s -m POST -H 'Content-Type:application/json' -b '{"name":"Test Location","latitude":47.6062,"longitude":-122.3321}' http://127.0.0.1:3001/tracks/locations`,
-  `bombardier --fasthttp -c 500 -d 10s -m POST -H 'Content-Type:application/json' -b '{"name":"Pike Place Market","latitude":47.6097,"longitude":-122.3425}' http://127.0.0.1:3001/tracks/locations`,
-  `bombardier --fasthttp -c 500 -d 10s -m POST -H 'Content-Type:application/json' -b '{"name":"Space Needle","latitude":47.6205,"longitude":-122.3493}' http://127.0.0.1:3001/tracks/locations`,
-  `bombardier --fasthttp -c 500 -d 10s -m POST -H 'Content-Type:application/json' -b '{"name":"University of Washington","latitude":47.6553,"longitude":-122.3035}' http://127.0.0.1:3001/tracks/locations`
+  `$HOME/go/bin/bombardier --fasthttp -c 500 -d 10s http://127.0.0.1:3001/tracks/locations`,
+  `$HOME/go/bin/bombardier --fasthttp -c 500 -d 10s -m POST -H 'Content-Type:application/json' -b '{"name":"Test Location","latitude":47.6062,"longitude":-122.3321}' http://127.0.0.1:3001/tracks/locations`,
+  `$HOME/go/bin/bombardier --fasthttp -c 500 -d 10s -m POST -H 'Content-Type:application/json' -b '{"name":"Pike Place Market","latitude":47.6097,"longitude":-122.3425}' http://127.0.0.1:3001/tracks/locations`,
+  `$HOME/go/bin/bombardier --fasthttp -c 500 -d 10s -m POST -H 'Content-Type:application/json' -b '{"name":"Space Needle","latitude":47.6205,"longitude":-122.3493}' http://127.0.0.1:3001/tracks/locations`,
+  `$HOME/go/bin/bombardier --fasthttp -c 500 -d 10s -m POST -H 'Content-Type:application/json' -b '{"name":"University of Washington","latitude":47.6553,"longitude":-122.3035}' http://127.0.0.1:3001/tracks/locations`
 ]
 
 const runBenchmark = async () => {

@@ -3,7 +3,7 @@ import { PrismaClient } from '@prisma/client'
 
 const prisma = new PrismaClient()
 
-export const authRoutes = new Elysia().group('/tracks', (app) =>
+export const trackRoutes = new Elysia().group('/tracks', (app) =>
   app
     .get('/locations', async () => {
       return await prisma.location.findMany()

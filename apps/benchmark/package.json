@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "benchmark": "bun bench-simple.ts",
+    "benchmark2": "bun bench-simple-post.ts",
     "kill-port": "kill-port 3000"
   },
   "devDependencies": {

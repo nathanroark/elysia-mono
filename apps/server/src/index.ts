@@ -3,11 +3,13 @@ import { staticPlugin } from '@elysiajs/static'
 import { healthRoutes } from '@server/routes/health'
 import { nendoroidRoutes } from '@server/routes/nendoroid'
 import { authRoutes } from '@server/routes/auth'
+import { trackRoutes } from '@server/routes/tracks'
 
 export const app = new Elysia()
   .use(healthRoutes)
   .use(nendoroidRoutes)
   .use(authRoutes)
+  .use(trackRoutes)
   .get('/', 'ok')
   .use(
     staticPlugin({
