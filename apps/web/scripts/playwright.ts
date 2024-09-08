@@ -8,13 +8,13 @@ await $`bun run build`
 let server: ReturnType<typeof $>
 
 await Promise.all([
-    (server = $`bun run start`),
-    (async () => {
-        await Bun.sleep(500)
-        await $`playwright test`
+  (server = $`bun run start`),
+  (async () => {
+    await Bun.sleep(500)
+    await $`playwright test`
 
-        server.throws(false)
+    server.throws(false)
 
-        process.exit(0)
-    })()
+    process.exit(0)
+  })()
 ])

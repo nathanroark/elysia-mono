@@ -16,11 +16,11 @@ This Turborepo includes the following packages/apps:
 
 ### Apps and Packages
 
--   `docs`: a [Next.js](https://nextjs.org/) app
--   `web`: another [Next.js](https://nextjs.org/) app
--   `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
--   `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
--   `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+- `docs`: a [Next.js](https://nextjs.org/) app
+- `web`: another [Next.js](https://nextjs.org/) app
+- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
+- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
+- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
 
 Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
@@ -28,9 +28,9 @@ Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
 This Turborepo has some additional tools already setup for you:
 
--   [TypeScript](https://www.typescriptlang.org/) for static type checking
--   [ESLint](https://eslint.org/) for code linting
--   [Prettier](https://prettier.io) for code formatting
+- [TypeScript](https://www.typescriptlang.org/) for static type checking
+- [ESLint](https://eslint.org/) for code linting
+- [Prettier](https://prettier.io) for code formatting
 
 ### Develop
 
@@ -76,12 +76,12 @@ npx turbo link
 
 Learn more about the power of Turborepo:
 
--   [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
--   [Caching](https://turbo.build/repo/docs/core-concepts/caching)
--   [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
--   [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
--   [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
--   [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
+- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
+- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
+- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
+- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
+- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
 
 ### Repo Uses Semantic Commit Messages
 
@@ -104,16 +104,16 @@ feat: add hat wobble
 
 More Examples:
 
--   `feat`: (new feature for the user, not a new feature for build script)
--   `fix`: (bug fix for the user, not a fix to a build script)
--   `docs`: (changes to the documentation)
--   `style`: (formatting, missing semi colons, etc; no production code change)
--   `refactor`: (refactoring production code, eg. renaming a variable)
--   `test`: (adding missing tests, refactoring tests; no production code change)
--   `chore`: (updating grunt tasks etc; no production code change)
+- `feat`: (new feature for the user, not a new feature for build script)
+- `fix`: (bug fix for the user, not a fix to a build script)
+- `docs`: (changes to the documentation)
+- `style`: (formatting, missing semi colons, etc; no production code change)
+- `refactor`: (refactoring production code, eg. renaming a variable)
+- `test`: (adding missing tests, refactoring tests; no production code change)
+- `chore`: (updating grunt tasks etc; no production code change)
 
 References:
 
--   https://www.conventionalcommits.org/
--   https://seesparkbox.com/foundry/semantic_commit_messages
--   http://karma-runner.github.io/1.0/dev/git-commit-msg.html
+- https://www.conventionalcommits.org/
+- https://seesparkbox.com/foundry/semantic_commit_messages
+- http://karma-runner.github.io/1.0/dev/git-commit-msg.html
