@@ -1,8 +1,8 @@
 import { spawn } from 'child_process'
 
 const commands = [
-  `$HOME/go/bin/bombardier --fasthttp -c 500 -d 10s http://127.0.0.1:3001/tracks/locations`,
-  `$HOME/go/bin/bombardier --fasthttp -c 500 -d 10s -m POST -H 'Content-Type:application/json' -b '{"name":"Test Location","latitude":47.6062,"longitude":-122.3321}' http://127.0.0.1:3001/tracks/locations`
+  `$HOME/go/bin/bombardier --fasthttp -c 5000 -d 10s http://127.0.0.1:3001/tracks/locations`,
+  `$HOME/go/bin/bombardier --fasthttp -c 5000 -d 10s -m POST -H 'Content-Type:application/json' -b '{"name":"Seattle","latitude":47.6062,"longitude":-122.3321}' http://127.0.0.1:3001/tracks/locations`
 ]
 
 const runBenchmark = async () => {
